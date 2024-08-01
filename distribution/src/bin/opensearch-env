@@ -6,14 +6,14 @@ CDPATH=""
 
 SCRIPT="$0"
 
-UNAME=$(uname -s)
-if [ $UNAME = "FreeBSD" ]; then
-  OS="freebsd"
-elif [ $UNAME = "Darwin" ]; then
-  OS="darwin"
-else
-  OS="other"
-fi
+# UNAME=$(uname -s)
+# if [ $UNAME = "FreeBSD" ]; then
+#   OS="freebsd"
+# elif [ $UNAME = "Darwin" ]; then
+#   OS="darwin"
+# else
+OS="other"
+# fi
 
 # SCRIPT might be an arbitrarily deep series of symbolic links; loop until we
 # have the concrete path
@@ -132,7 +132,7 @@ if [[ "$OPENSEARCH_DISTRIBUTION_TYPE" == "docker" ]]; then
   #
   # will cause OpenSearch to be invoked with -Ecluster.name=testcluster
   #
-  # see https://opensearch.org/docs/opensearch/configuration/ 
+  # see https://opensearch.org/docs/opensearch/configuration/
 
   declare -a opensearch_arg_array
 
