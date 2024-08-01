@@ -186,6 +186,8 @@ public class DockerBuildTask extends DefaultTask {
                     spec.args("--no-cache");
                 }
 
+		spec.args("--network", "host");
+
                 parameters.getTags().get().forEach(tag -> spec.args("--tag", tag));
             });
 

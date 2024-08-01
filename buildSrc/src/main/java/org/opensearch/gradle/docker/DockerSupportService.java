@@ -67,7 +67,7 @@ public abstract class DockerSupportService implements BuildService<DockerSupport
 
     private static Logger LOGGER = Logging.getLogger(DockerSupportService.class);
     // Defines the possible locations of the Docker CLI. These will be searched in order.
-    private static String[] DOCKER_BINARIES_UNIX = { "/usr/bin/docker", "/usr/local/bin/docker" };
+    private static String[] DOCKER_BINARIES_UNIX = { "/usr/bin/docker", "/usr/local/bin/docker", "/run/current-system/sw/bin/docker" };
 
     private static String[] DOCKER_BINARIES_WINDOWS = {
         System.getenv("PROGRAMFILES") + "\\Docker\\Docker\\resources\\bin\\docker.exe",
