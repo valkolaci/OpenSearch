@@ -2,7 +2,7 @@
 
 set -e -o pipefail
 
-source "`dirname "$0"`"/opensearch-env
+source ./bin/opensearch-env
 
 IFS=';' read -r -a additional_sources <<< "$OPENSEARCH_ADDITIONAL_SOURCES"
 for additional_source in "${additional_sources[@]}"
