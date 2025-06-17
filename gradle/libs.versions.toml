@@ -53,7 +53,7 @@ commonslang       = "3.14.0"
 commonscompress   = "1.26.1"
 commonsio         = "2.16.0"
 # plugin dependencies
-aws               = "2.30.31"
+aws               = "2.29.52"
 awscrt            = "0.35.0"
 reactivestreams   = "1.0.4"
 
